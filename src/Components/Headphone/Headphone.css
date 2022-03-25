@@ -47,3 +47,13 @@ button:hover {
   color: purple;
   border: 3px solid purple;
 }
+
+@media screen and (max-width: 576px) {
+  .single-headphone {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .single-headphone img {
+    width: 280px;
+  }
+}

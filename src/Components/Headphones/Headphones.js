@@ -5,6 +5,7 @@ import './Headphones.css';
 const Headphones = () => {
     const [headphones, setHeadphones] = useState([]);
     const [cart, setCart] = useState([]);
+    const [selectedOne, setSelectedOne] = useState([]);
     useEffect( () => {
         fetch('data.json')
         .then(res => res.json())
@@ -13,6 +14,19 @@ const Headphones = () => {
     const handleCart = (headphone) =>{
         const newCart = [...cart, headphone];
         setCart(newCart);
+    }
+    const chooseOne = (cart) =>{
+        const fullCartList = [...cart];
+        const selectingOne = Math.floor(Math.random()* fullCartList.length);
+        const randomOne = [cart[selectingOne]];
+        console.log(randomOne);
+        setSelectedOne(randomOne);
+        setCart([]);
+    }
+    const chooseAgain = () =>{
+        const clearCart = [];
+        setSelectedOne([]);
+        setCart(clearCart);
     }
     return (
         <div className='main-container' >
@@ -27,13 +41,23 @@ const Headphones = () => {
                     }
                 </div>
                 <div className='cart-container' >
-                    <h1 className='cart-header' >Your Cart</h1>
+                    <h1 className='cart-header'>Your Cart</h1>
                     {
-                        cart.map(product=> <div className='cart-item' >
+                        cart.map(product=> <div className='cart-item' key={product.id} >
                             <img src={product.image} alt="" />
                             <h1> {product.name} </h1>
+                            
                         </div> )
                     }
+                    {
+                        selectedOne.map(chosenOne => <div className='cart-item' >
+                            <img src={chosenOne.image} alt="" />
+                            <h1 key={chosenOne.id}  > {chosenOne.name} </h1>
+                        </div>
+                             )
+                    }
+                    <button onClick={()=>chooseOne(cart)} style={ { marginBottom: "20px", marginRight: "10px" }  }  >Choose One</button>
+                    <button onClick={()=>chooseAgain()}>Clear Cart</button>
                 </div>
             </div>
         </div>

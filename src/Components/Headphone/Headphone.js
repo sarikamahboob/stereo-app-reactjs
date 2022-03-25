@@ -9,7 +9,7 @@ const Headphone = ({headphoneData, handleCart }) => {
         <div className='single-headphone' >
             <img src={image} alt="" />
             <h2> {name} </h2>
-            <p>Price: {price} </p>
+            <p>Price: ${price} </p>
             <button onClick={() => handleCart(headphoneData)} >Add to Cart
                 <span><FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon></span>
             </button>
