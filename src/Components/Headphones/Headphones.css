@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.products-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.headphones-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin: 100px 50px;
+}
+
+.cart-container {
+  background-color: rgb(233, 255, 194);
+  padding: 40px;
+  position: sticky;
+  top: 0;
+}
+
+.cart-header {
+  color: purple;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  border-radius: 50%;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.cart-item h1 {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  color: green;
+}
+
+@media screen and (max-width: 576px) {
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+  .headphones-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: 2;
+  }
+  .cart-container {
+    grid-row: 1;
+  }
+}

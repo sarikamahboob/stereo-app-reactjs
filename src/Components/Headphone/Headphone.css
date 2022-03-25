@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+.single-headphone {
+  width: 340px;
+  text-align: center;
+  background-color: rgb(231, 252, 255);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.single-headphone img {
+  border-radius: 20px;
+}
+
+.single-headphone h2 {
+  color: purple;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+}
+
+.single-headphone p {
+  color: blue;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  background-color: rgb(231, 252, 255);
+  color: blue;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  border: 3px solid blue;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.3s ease-in;
+}
+
+button span {
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: rgb(233, 255, 194);
+  color: purple;
+  border: 3px solid purple;
+}

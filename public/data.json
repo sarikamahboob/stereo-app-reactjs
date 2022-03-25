@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "name" : "Pink RGB Headphone",
+        "price" : 200,
+        "image" : "https://s.alicdn.com/@sc04/kf/H147e1f6738aa454e8539a14eb46dcd8el.jpg_300x300.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Blue Unicorn Headphone",
+        "price" : 500,
+        "image" : "https://s.alicdn.com/@sc04/kf/H7cfeff8317a743c687f76b953962882ck.jpg_300x300.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "Purple Kitty Headphone",
+        "price" : 450,
+        "image" : "https://s.alicdn.com/@sc04/kf/H11da1a380036426d89dbcc582d11f008b.png_300x300.png"
+    },
+    {
+        "id" : 4,
+        "name" : "Pink Fur Headphone",
+        "price" : 700,
+        "image" : "https://s.alicdn.com/@sc04/kf/H239c0b5d83624a97aa3b579b8895b322S.jpg_300x300.jpg"
+    },
+    {
+        "id" : 5,
+        "name" : "Metallic Red headphone",
+        "price" : 550,
+        "image" : "https://s.alicdn.com/@sc04/kf/Hb429ef120ed24f1f87d52555719900c8S.jpg_300x300.jpg"
+    },
+    {
+        "id" : 6,
+        "name" : "Sea Green Kitty Headphone",
+        "price" : 800,
+        "image" : "https://s.alicdn.com/@sc04/kf/H7a2e835fc0f54bc0b6ea4fa35accdb5fr.jpg_300x300.jpg"
+    },
+    {
+        "id" : 7,
+        "name" : "PowderBlue Bluetooth Headphone",
+        "price" : 900,
+        "image" : "https://s.alicdn.com/@sc04/kf/H0c99414f41c5458bb55b913ee529c4211.jpg_300x300.jpg"
+    },
+    {
+        "id" : 8,
+        "name" : "Black & Red Headphone",
+        "price" : 400,
+        "image" : "https://s.alicdn.com/@sc04/kf/H8bf2348e253e417ca78a2bad884b98ab5.jpg_300x300.jpg"
+    },
+    {
+        "id" : 9,
+        "name" : "Bunny Headphone",
+        "price" : 500,
+        "image" : "https://s.alicdn.com/@sc04/kf/Hd71c0c9ccbd64f71a351ef2317e0fde7u.jpg_300x300.jpg"
+    },
+    {
+        "id" : 10,
+        "name" : "White RGB Headphone",
+        "price" : 580,
+        "image" : "https://s.alicdn.com/@sc04/kf/H249bb18c00a641788eff9c505767fce8V.jpg_300x300.jpg"
+    },
+    {
+        "id" : 11,
+        "name" : "Glittery Blue Headphone",
+        "price" : 600,
+        "image" : "https://s.alicdn.com/@sc04/kf/H30d3c8a6c5ba48a4a623437b1788a597s.jpg_300x300.jpg"
+    },
+    {
+        "id" : 12,
+        "name" : "Premium Pink Headphone",
+        "price" : 900,
+        "image" : "https://s.alicdn.com/@sc04/kf/Hfe7ffd0287d1419cb4f30455352d1e1aE.jpg_300x300.jpg"
+    }
+]
