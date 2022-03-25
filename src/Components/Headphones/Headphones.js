@@ -10,18 +10,35 @@ const Headphones = () => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setHeadphones(data));
-    }, [])
+    }, []);
+    const removeDuplicates = (data) =>{
+        return data.filter ((value, index) => data.indexOf(value) === index);
+    }
+    // if(cart.length <= 4){
+
+    // }
     const handleCart = (headphone) =>{
-        const newCart = [...cart, headphone];
+       if(cart.length < 4){
+        const newCart = removeDuplicates([...cart, headphone]);
         setCart(newCart);
+       }
+       else{
+           console.log('Nothing');
+       }
     }
     const chooseOne = (cart) =>{
-        const fullCartList = [...cart];
+        if(cart.length === 0){
+            console.log('Cart is Empty');
+        }
+        else{
+            const fullCartList = [...cart];
         const selectingOne = Math.floor(Math.random()* fullCartList.length);
         const randomOne = [cart[selectingOne]];
         console.log(randomOne);
         setSelectedOne(randomOne);
         setCart([]);
+        }
+        
     }
     const chooseAgain = () =>{
         const clearCart = [];
@@ -43,7 +60,8 @@ const Headphones = () => {
                 <div className='cart-container' >
                     <h1 className='cart-header'>Your Cart</h1>
                     {
-                        cart.map(product=> <div className='cart-item' key={product.id} >
+                        cart.map(product=> 
+                        <div className='cart-item' key={product.id} >
                             <img src={product.image} alt="" />
                             <h1> {product.name} </h1>
                             
@@ -56,7 +74,7 @@ const Headphones = () => {
                         </div>
                              )
                     }
-                    <button onClick={()=>chooseOne(cart)} style={ { marginBottom: "20px", marginRight: "10px" }  }  >Choose One</button>
+                    <button onClick={()=>chooseOne(cart)} style={ { marginBottom: "20px", marginRight: "10px" }}  >Choose One</button>
                     <button onClick={()=>chooseAgain()}>Clear Cart</button>
                 </div>
             </div>
