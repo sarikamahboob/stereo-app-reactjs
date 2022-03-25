@@ -74,8 +74,10 @@ const Headphones = () => {
                         </div>
                              )
                     }
-                    <button onClick={()=>chooseOne(cart)} style={ { marginBottom: "20px", marginRight: "10px" }}  >Choose One</button>
+                    <div className='buttons' >
+                    <button onClick={()=>chooseOne(cart)}   >Choose One</button>
                     <button onClick={()=>chooseAgain()}>Clear Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
